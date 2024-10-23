@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Yusei+Magic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Protest Strike", sans-serif;
+  font-size:2rem;
+  color:darkred;
+}
+
+.header {
+  .logo {
+    width: 100px;
+  }
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-right: 15px;
+      a {
+        text-decoration: none;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+.headerLogo {
+  width: 100px;
+}
+
+/*.principalIndex {
+  width: 1vw;
+}
+
+.awareTitle{
+  font-size: "1rem";
+  width: 1vw;
+  text-align: center;
+}*/
