@@ -6,7 +6,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Reggae+One&display=swap');
 
-
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Protest+Strike&family=Reggae+One&display=swap');
 
 *{
   margin: 0;
@@ -24,7 +24,7 @@
   background-color: black;
   
   img {
-    width: 250px;
+    width: 200px;
     filter: invert(100);
   }
   nav {
@@ -32,13 +32,13 @@
     ul {
       list-style: none;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-evenly;
       li {
         /*display: inline-block; no hace falta si uso flexbox*/
         margin-right: 20px;
         a{
           text-decoration: none;
-          color:rgb(167, 2, 35);
           color:white;
           font-size: 1.5rem;
         }
@@ -47,21 +47,29 @@
   }
 }
 
-h1 {
-  font-family: "Reggae One", sans-serif;
-  font-size:2rem;
-  color:darkred;
+.awareMain{
+  padding-left: 20px;
+  padding-right: 20px;
+  
+  h1 {
+    .awareTitle {
+      font-family: "Reggae One", sans-serif;
+      font-size:2rem;
+      color:darkred;
+      text-align: center;
+      margin: 1em;
+    }
+  }
+  .awareMainPresentation{
+  background-image:url("../assets/img/background.jpg");
+  }
+  .awareSubtitle{
+    font-family: "M PLUS 1p", sans-serif;;
+    font-size: 1.5em;
+    text-align: center;
+  }
 }
-}
 
 
 
-/*.principalIndex {
-  width: 1vw;
-}
 
-.awareTitle{
-  font-size: "1rem";
-  width: 1vw;
-  text-align: center;
-}*/
