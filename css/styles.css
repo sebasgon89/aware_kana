@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Reggae+One&display=swap');
+
 
 
 *{
@@ -12,52 +14,47 @@
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: "Protest Strike", sans-serif;
-  font-size:2rem;
-  color:darkred;
-}
-
 .header {
+  font-family: "Reggae One", sans-serif;
   width: 100%;
-  padding: 20px;
+  padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: black;
   
   img {
-    width: 33vw;
+    width: 250px;
+    filter: invert(100);
   }
   nav {
+    width: 75%;
     ul {
       list-style: none;
+      display: flex;
+      justify-content: space-evenly;
       li {
-        display: inline-block;
-        margin-right: 15px;
+        /*display: inline-block; no hace falta si uso flexbox*/
+        margin-right: 20px;
         a{
           text-decoration: none;
           color:rgb(167, 2, 35);
+          color:white;
           font-size: 1.5rem;
         }
       }
     }
   }
-  ul {
-    list-style: none;
-    li {
-      display: inline-block;
-      margin-right: 15px;
-      a {
-        text-decoration: none;
-        font-size: 1rem;
-      }
-    }
-  }
 }
 
-.headerLogo {
-  width: 100px;
+h1 {
+  font-family: "Reggae One", sans-serif;
+  font-size:2rem;
+  color:darkred;
 }
+}
+
+
 
 /*.principalIndex {
   width: 1vw;
