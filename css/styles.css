@@ -55,7 +55,8 @@
     .awareTitle {
       padding-left: 0;
       font-family: "Reggae One", sans-serif;
-      font-size:2rem;
+      font-weight: bold;
+      font-size:2.5rem;
       color:darkred;
       text-align: center;
     }
@@ -63,8 +64,13 @@
 
   .awareSubtitle{
     font-family: "M PLUS 1p", sans-serif;;
+    font-weight: bold;
     font-size: 1.5em;
     text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
   }
 }
 
@@ -72,7 +78,7 @@
 .awareMain{
   padding-left: 20px;
   padding-right: 20px;
-}
+} q
 
 
 
