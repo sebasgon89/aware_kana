@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&family=Yusei+Magic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Reggae+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Protest+Strike&family=Reggae+One&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: "Reggae One", sans-serif;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  
+  img {
+    width: 200px;
+    filter: invert(100);
+  }
+  nav {
+    width: 75%;
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      li {
+        /*display: inline-block; no hace falta si uso flexbox*/
+        margin-right: 20px;
+        a{
+          text-decoration: none;
+          color:white;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+.awareMainPresentation{
+  background-image:url("../assets/img/backgroundcerezo.jpg");
+  margin-bottom: 30px;
+
+  h1 {
+    .awareTitle {
+      padding-left: 0;
+      font-family: "Reggae One", sans-serif;
+      font-size:2rem;
+      color:darkred;
+      text-align: center;
+    }
+  }
+
+  .awareSubtitle{
+    font-family: "M PLUS 1p", sans-serif;;
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+
+.awareMain{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+
+
