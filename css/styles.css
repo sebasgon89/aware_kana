@@ -55,6 +55,7 @@
   h1 {
     .awareTitle {
       padding-left: 0;
+      padding-top: 20px;
       font-family: "Reggae One", sans-serif;
       font-weight: bold;
       font-size:2rem;
@@ -64,7 +65,7 @@
   }
 
   .awareSubtitle{
-    font-family: "M PLUS 1p", sans-serif;;
+    font-family: "M PLUS 1p", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
     text-align: center;
@@ -78,9 +79,31 @@
 
 
 .awareMain{
+  padding-top: 15px;
   padding-left: 20px;
   padding-right: 20px;
-} 
+
+  h2 {
+    font-family: "Reggae One", sans-serif;
+    font-size: 1.5rem;
+    color: darkred;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .awareGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+  }
+
+  .awareGalleryItem{
+    img {
+      width: 400px
+    }
+  }
+}
 
 
 
