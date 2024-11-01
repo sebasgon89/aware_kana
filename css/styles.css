@@ -96,12 +96,27 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
+
+    /*gradient*/
+    background: #ff0000;
+    background: radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
+    background: -webkit-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
+    background: -moz-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
   }
 
   .awareGalleryItem{
     img {
       width: 400px
     }
+  }
+
+  .awareStyle {
+    font-family: "M PLUS 1p", sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2;
+    width: 80vw;
+    margin: 0, auto;
   }
 }
 
