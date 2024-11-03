@@ -48,7 +48,11 @@
 }
 
 .awareMainPresentation{
-  background-image:url("../assets/img/backgroundcerezo.jpg");
+  /*background-image:url("../assets/img/backgroundcerezo.jpg");*/
+  background: #ff0000;
+    background: radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
+    background: -webkit-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
+    background: -moz-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
   margin-bottom: 30px;
 
 
@@ -59,7 +63,7 @@
       font-family: "Reggae One", sans-serif;
       font-weight: bold;
       font-size:2rem;
-      color:darkred;
+      color: black;
       text-align: center;
     }
   }
@@ -99,11 +103,6 @@
     margin-top: 20px;
     margin-bottom: 20px;
 
-    /*gradient*/
-    background: #ff0000;
-    background: radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
-    background: -webkit-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
-    background: -moz-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
   }
 
   .awareParagraphContainer {
@@ -124,6 +123,9 @@
     img {
       width: 400px
     }
+    border-color: darkred;
+    border-style:groove;
+    border-width: 5px;
   }
 
   .awareStyle {
@@ -131,7 +133,7 @@
     font-weight: bold;
     text-align: justify;
     line-height: 2;
-    width: 80vw;
+    width: 90vw;
     margin-bottom: 10px;
   }
 }
