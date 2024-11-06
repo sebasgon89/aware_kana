@@ -14,9 +14,24 @@
   box-sizing: border-box;
 }
 
+h1 {
+  .awareTitle {
+    padding-left: 0;
+    padding-top: 20px;
+    font-family: "Reggae One", sans-serif;
+    font-weight: bold;
+    font-size:2rem;
+    color: black;
+    text-align: center;
+  }
+}
+
 .header {
   font-family: "Reggae One", sans-serif;
-  width: 100%;
+  position:sticky;
+  top:0;
+  z-index:1005;
+  width: 100vw;
   padding: 5px;
   display: flex;
   justify-content: space-between;
@@ -35,7 +50,6 @@
       flex-wrap: wrap;
       justify-content: space-evenly;
       li {
-        /*display: inline-block; no hace falta si uso flexbox*/
         margin-right: 20px;
         a{
           text-decoration: none;
@@ -48,25 +62,14 @@
 }
 
 .awareMainPresentation{
-  /*background-image:url("../assets/img/backgroundcerezo.jpg");*/
   background: #ff0000;
-    background: radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
-    background: -webkit-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
-    background: -moz-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
+  background: radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
+  background: -webkit-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
+  background: -moz-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
   margin-bottom: 30px;
 
 
-  h1 {
-    .awareTitle {
-      padding-left: 0;
-      padding-top: 20px;
-      font-family: "Reggae One", sans-serif;
-      font-weight: bold;
-      font-size:2rem;
-      color: black;
-      text-align: center;
-    }
-  }
+
 
   .awareSubtitle{
     font-family: "M PLUS 1p", sans-serif;
@@ -102,7 +105,6 @@
     gap: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
-
   }
 
   .awareParagraphContainer {
@@ -115,8 +117,6 @@
     font-size: 1.2rem;
     text-align: justify;
     line-height: 2;
-
-    
   }
 
   .awareGalleryItem{
@@ -124,7 +124,7 @@
       width: 400px
     }
     border-color: darkred;
-    border-style:groove;
+    border-style: groove;
     border-width: 5px;
   }
 
@@ -137,6 +137,52 @@
     margin-bottom: 10px;
   }
 }
+
+.footer {
+  width: 100vw;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  background-color: rgb(59, 57, 57);
+  
+  img {
+    width: 150px;
+    filter: invert(100);
+  }
+
+  ul{
+    list-style: none;
+
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 1,.5rem;
+    }
+
+    .fa-instagram, .fa-facebook, .fa-twitter{
+      font-size: 2rem; 
+      margin-top: 8px;
+    }
+  }
+  
+  .fa-whatsapp{
+    font-size: 3rem;
+    color:rgb(44, 181, 44);
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .address {
+    font-size: 1rem;
+    color: lightgray;
+  }
+}
+
+
+
 
 
 
