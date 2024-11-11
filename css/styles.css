@@ -37,11 +37,15 @@ h1 {
   border-bottom-style: groove;
 }
 
+.spanBold {
+  font-weight: bold;
+}
+
 .header {
   font-family: "Reggae One", sans-serif;
   position:sticky;
-  top:0;
-  z-index:1005;
+  top:0px;
+  z-index:1015;
   width: 100vw;
   padding: 5px;
   display: flex;
@@ -170,6 +174,8 @@ h1 {
 
 .footer {
   font-family: "M PLUS 1p", sans-serif;;
+  position: relative;
+  bottom: 0;
   width: 100vw;
   margin-top: 50px;
   display: flex;
@@ -222,6 +228,48 @@ h1 {
    }
  }
 
+.awareGrid{
+  display: grid;
+  width: 95vw;
+  height: auto;
+  grid-template-columns: 20% auto;
+  grid-template-rows: 1fr;
+  font-family: "M PLUS 1p", sans-serif;
+
+  .sideBar{
+    position:sticky;
+    top:0px;
+    background-color: rgb(188, 188, 188);
+    ul{
+      font-weight: bold;
+      font-size: 1.2rem;
+      list-style: none;
+      li{
+        margin-left: 5px;
+        margin-top: 10px;;
+        a{
+          text-decoration: none;
+          color: darkred;
+        }
+      }
+    }
+  }
+
+  .gridContent{
+    padding-left:30px;
+    line-height: 1.5;
+    text-align: justify;
+
+    h2{
+      margin-top:30px;
+      font-family: "Reggae One", sans-serif;
+    }
+    p{
+      margin-top:20px;
+      font-size: 1.5rem;
+    }
+  }
+ }
 
 
 
