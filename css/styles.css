@@ -27,8 +27,29 @@ h1 {
   .awareSectionTitle {
     color: darkred;
   }
+  .awareColletionTitle {
+    text-align: left;
+  }
 }
 
+.awareCollections {
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: "Reggae One", sans-serif;
+  font-weight: bold;
+  font-size:1.5rem;
+  color: darkred;
+  text-align: left;
+}
+
+h3 {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top:30px;
+  margin-left:20px;
+}
 .aWareSeparatorColor {
   border-bottom-color:rgba(123, 123, 123, 0.739);
 }
@@ -133,9 +154,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     gap: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin: 20px;
   }
 
   .awareParagraphContainer {
@@ -152,9 +171,14 @@ h1 {
 
   .awareGalleryItem{
     img {
-      width: 400px;
+      width: 300px;
       border-top-left-radius: 4%;
       border-top-right-radius: 4%;
+    }
+    p {
+      text-align: left;
+      text-wrap: wrap;
+      font-size: 1rem;
     }
     border-color: darkred;
     border-style: groove;
@@ -271,9 +295,36 @@ h1 {
   }
  }
 
+.awareProduct{
+  font-family: "M PLUS 1p", sans-serif;;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 200px;
+  text-wrap: wrap;
+}
 
+.awareProductGallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  gap: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
 
+.awareProductItem{
+  img {
+    width: 200px;
+    border-top-left-radius: 4%;
+    border-top-right-radius: 4%;
 
-
-
-
+  }
+  img:hover{
+    transform:scale(2);
+  }
+  border-color: darkred;
+  border-style: groove;
+  border-width: 5px;
+  border-radius: 5%;
+}
