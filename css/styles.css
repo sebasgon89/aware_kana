@@ -206,7 +206,7 @@ h3 {
   width: 100vw;
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   height: 30vh;
   background-color: rgb(59, 57, 57);
@@ -243,6 +243,10 @@ h3 {
     font-size: 1rem;
     color: lightgray;
   }
+
+  .awareForm{
+    width: 25vw;
+  }
 }
 
 @media screen and (max-width:768px){
@@ -255,18 +259,29 @@ h3 {
    }
  }
 
+ .awareVideo{
+  display: flex;
+  
+  margin-top: 20px;
+  margin-bottom:20px;
+  iframe{
+    margin-left: auto;
+    margin-right: auto;
+  }
+ }
+
 .awareGrid{
   display: grid;
   width: 95vw;
   height: auto;
-  grid-template-columns: 20% auto;
+  grid-template-columns: 25% auto;
   grid-template-rows: 1fr;
   font-family: "M PLUS 1p", sans-serif;
 
   .sideBar{
     position:sticky;
     top:0px;
-    background-color: rgb(188, 188, 188);
+    background-color: rgb(232, 232, 232);
     ul{
       font-weight: bold;
       font-size: 1.2rem;
@@ -295,6 +310,23 @@ h3 {
       margin-top:20px;
       font-size: 1.5rem;
     }
+  }
+ }
+ @media screen and (max-width:768px){
+  .awareGrid{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+ }
+
+ .awareNosoawareNosotrosContent{
+  margin: 30px;
+ }
+
+ .awareCharacters{
+  margin-top:50px;
+  img{
+    width: 100%;
   }
  }
 
@@ -332,7 +364,8 @@ h3 {
   border-radius: 5%;
 }
 
-form {
+
+.awareContact{
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -347,3 +380,34 @@ form {
     font-size: 1.2rem;
   }
 }
+
+.collectionSombrasDeHaiku{
+  background: #030303;
+  background: linear-gradient(71deg,#030303 0%, #003bff 80%);
+  background: -webkit-linear-gradient(71deg,#030303 0%, #003bff 80%);
+  background: -moz-linear-gradient(71deg,#030303 0%, #003bff 80%);
+
+  font-weight: bold;
+  color:white;
+}
+
+.collectionShodo{
+  background: #b30909;
+  background: linear-gradient(46deg,#b30909 0%, #000000 80%);
+  background: -webkit-linear-gradient(46deg,#b30909 0%, #000000 80%);
+  background: -moz-linear-gradient(46deg,#b30909 0%, #000000 80%);
+
+  font-weight: bold;
+  color:white;
+}
+
+.collectionHaiku{
+  background: #000000;
+  background: linear-gradient(103deg,#000000 0%, #36753b 80%);
+  background: -webkit-linear-gradient(103deg,#000000 0%, #36753b 80%);
+  background: -moz-linear-gradient(103deg,#000000 0%, #36753b 80%);
+
+  color: white;
+  font-weight: bold;
+}
+
