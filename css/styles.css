@@ -57,10 +57,6 @@ h3 {
   border-bottom-color:rgba(123, 123, 123, 0.739);
 }
 
-.awareSeparatorStyle {
-  border-bottom-style: groove;
-}
-
 .spanBold {
   font-weight: bold;
 }
@@ -117,16 +113,16 @@ h3 {
  }
 
 .awareMainPresentation{
-  background: #ff0000;
+  /*background: #ff0000;
   background: radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
   background: -webkit-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
   background: -moz-radial-gradient(ellipse farthest-side at center center, #ff0000 0%, #ffffff 80%);
-  margin-bottom: 30px;
+  margin-bottom: 30px;*/
+  
+  background-image: url("../assets/img/kyoto2bis.png");
+  background-size: cover;
 
-
-
-
-  .awareSubtitle{
+  p{
     font-family: "M PLUS 1p", sans-serif;
     font-weight: bold;
     font-size: 1.5rem;
@@ -149,7 +145,8 @@ h3 {
     font-size: 1.5rem;
     color: darkred;
     text-align: center;
-    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
   }
   
   .awareGallery {
@@ -204,15 +201,17 @@ h3 {
   position: relative;
   bottom: 0;
   width: 100vw;
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   height: 30vh;
+  padding-bottom: 40px;
+  padding-top: 40px;
   background-color: rgb(59, 57, 57);
 
   img {
-    width: 150px;
+    width: 120px;
     filter: invert(100);
   }
 
@@ -262,8 +261,8 @@ h3 {
  .awareVideo{
   display: flex;
   
-  margin-top: 20px;
-  margin-bottom:20px;
+  margin-top: 40px;
+  margin-bottom:80px;
   iframe{
     margin-left: auto;
     margin-right: auto;
@@ -274,6 +273,7 @@ h3 {
   display: grid;
   width: 95vw;
   height: auto;
+  margin-bottom: 100px;
   grid-template-columns: 25% auto;
   grid-template-rows: 1fr;
   font-family: "M PLUS 1p", sans-serif;
@@ -357,6 +357,7 @@ h3 {
   }
   img:hover{
     transform:scale(2);
+    transition-duration: 1.5s;
   }
   border-color: darkred;
   border-style: groove;
