@@ -1,0 +1,1 @@
+Pre entrega del curso de Frontend de Talento Tech. Usé el emprendimiento de remeras basadas en la cultura japonesa llevado a cabo por una amiga. Usé los conceptos del curso; flex, grid, audio, iframes y muchos elementos vistos d CSS.
