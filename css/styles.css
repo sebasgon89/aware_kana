@@ -412,3 +412,19 @@ h3 {
   font-weight: bold;
 }
 
+.contactFormInput{
+  margin-top: 20px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+small {
+  font-size: 12px;
+  color: red;
+  font-weight: bold;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.displayNone{
+  display: none;
+}
+

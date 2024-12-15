@@ -30,52 +30,57 @@
         <h1><div class="awareTitle awareSectionTitle">Contacto</div></h1>
       </section>
       <section>
-        <form class="awareContact" action="#" method="POST">
-          <input type="text" name="nombre" id="nombre" placeholder="Nombre">
-          <input type="email" name="email" id="email" placeholder="email">
-          <textarea name="mensaje" id="mensaje" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea>
-          <button type="submit">Enviar</button>
+        <form action="" class="awareContact" id="contactForm">
+          <input type="text" name="nombre" class="contactFormInput" id="name" placeholder="Nombre">
+          <small id="errorName" class="displayNone">El campo nombre es obligatorio. </small>
+          <input type="email" name="email" class="contactFormInput" id="email" placeholder="email">
+          <small id="errorMail" class="displayNone">El campo email ingresado no es válido. </small>
+          <textarea name="mensaje" class="contactFormInput" id="message" rows="4" cols="50" placeholder="Escribe tu mensaje"></textarea>
+          <small id="errorMessage" class="displayNone">El texto debe tener 10 caracteres como mínimo. </small>
+          <input type="submit" value="Enviar">  
         </form>
       </section>
     </main>
+  
+    <footer class="footer">
+      <a href="#"><img class="awareLogo" src="../assets/img/logo.png" alt="logo de aware kana"></a>
+
+
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      
+      <nav>
+        <ul>
+          <li><a href="https://www.instagram.com/aware.kana/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+      </nav>
+
+      <address class="address">
+        <p>Dirección: Pasaje Novais 789, Olivos, Vicente López</p>
+        <p>Teléfono: (11) 555-5555</p>
+        <p>Mail: <a mailto="remeras@awarekana.com.ar">remeras@awarekana.com.ar</a></p>
+      </address>
+
+      <div>
+        <form action="">
+            <input type="email" placeholder="Dejanos tu mail" id="emailUser" name="emailUser">
+            <input type="submit" value="Suscribite!">
+        </form>
+      </div>
+
+      <div>
+        <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+
+
+
+    </footer>
+    <script src="../js/contact_validation4.js"></script>
   </body>
-  <footer class="footer">
-    <a href="#"><img class="awareLogo" src="../assets/img/logo.png" alt="logo de aware kana"></a>
-
-
-    <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Contacto</a></li>
-      </ul>
-    </nav>
-    
-    <nav>
-      <ul>
-        <li><a href="https://www.instagram.com/aware.kana/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-        <li><a href="https://twitter.com/?lang=es" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
-      </ul>
-    </nav>
-
-    <address class="address">
-      <p>Dirección: Pasaje Novais 789, Olivos, Vicente López</p>
-      <p>Teléfono: (11) 555-5555</p>
-      <p>Mail: <a mailto="remeras@awarekana.com.ar">remeras@awarekana.com.ar</a></p>
-    </address>
-
-    <div>
-      <form action="">
-          <input type="email" placeholder="Dejanos tu mail" id="emailUser" name="emailUser">
-          <input type="submit" value="Suscribite!">
-      </form>
-    </div>
-
-    <div>
-      <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-    </div>
-
-
-
-  </footer>
 </html>
