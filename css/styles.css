@@ -428,3 +428,23 @@ small {
   display: none;
 }
 
+.formButton{
+  background: darkred;
+	border: none;
+	border-radius: 20px;
+	color: #ffffff;
+	display: block;
+	font: "M PLUS 1p", sans-serif;
+	letter-spacing: 1px;
+	margin: auto;
+  margin-top:20px;
+	padding: 7px 25px;
+	text-shadow: 0 1px 1px #000000;
+	text-transform: uppercase;
+}
+
+.formButton:hover {
+	background: #1e2506;
+	cursor: pointer;
+}
+
