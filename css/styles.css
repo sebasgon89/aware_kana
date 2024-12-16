@@ -428,6 +428,10 @@ small {
   display: none;
 }
 
+.contactSection{
+  background-image: url("../assets/img/backgroundkanjis.jpg");
+}
+
 .formButton{
   background: darkred;
 	border: none;
@@ -448,3 +452,10 @@ small {
 	cursor: pointer;
 }
 
+.formContact{
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: rgb(228, 228, 228);
+}
