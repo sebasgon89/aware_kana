@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+
+  alert(3);
   const renderCart = () => {
     cartTable.innerHTML = "";
 
