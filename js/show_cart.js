@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 
-  alert(3);
   const renderCart = () => {
     cartTable.innerHTML = "";
 
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const row = document.createElement("tr");
       row.innerHTML = `
         <td>${item.name}</td>
-        <td>${item.price}</td>
+        <td>$${item.price}</td>
         <td>
           <a class="formButton" data-index="${index}">Remove</a>
         </td>
@@ -33,6 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
   const calculateTotal = () => {
     const total = cart.reduce((sum, item) => sum + parseFloat(item.price), 0);
 
-    cartTotal.textContent = total;
+    cartTotal.textContent = "Total: "+ total;
   }
+
+  renderCart();
+  
+  cartTable.addEventListener("click", (event) => {
+    if (event.target.classList.contains("formButton")){
+      const index = event.target.getAttribute("data-index");
+      cart.splice(index, 1);
+  
+      localStorage.setItem("cart", JSON.stringify(cart));
+  
+      renderCart();
+    }
+  });
+
 });

@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("cart", JSON.stringify(cart));
 
-      alert("Product added to cart!");
+      alert("Agregado al carrito!");
 
     });
   });
